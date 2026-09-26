@@ -24,7 +24,7 @@ public class StringSet {
             return;
         }
 
-        if (size >= capacity) {
+        if (size >= 0.7 * capacity) {
             resize();
         }
 
