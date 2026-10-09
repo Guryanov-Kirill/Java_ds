@@ -1,16 +1,16 @@
 package HashSet;
 
-class StringList {
+public class StringList {
 
     Node head;
 
-    void add(String value) {
+    public void add(String value) {
         Node newNode = new Node(value);
         newNode.next = head;
         head = newNode;
     }
 
-    boolean contains(String value) {
+    public boolean contains(String value) {
         Node current = head;
         while (current != null) {
             if (current.value.equals(value)) {
@@ -21,7 +21,7 @@ class StringList {
         return false;
     }
 
-    boolean remove(String value) {
+    public boolean remove(String value) {
         Node current = head;
         Node previous = null;
 
@@ -40,7 +40,7 @@ class StringList {
         return false;
     }
 
-    void clear() {
+    public void clear() {
         head = null;
     }
 }

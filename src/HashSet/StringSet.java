@@ -77,5 +77,14 @@ public class StringSet {
             }
         }
     }
+
+    public StringSet(StringList mockList) {
+        this.capacity = 4;
+        this.table = new StringList[capacity];
+        for (int i = 0; i < capacity; i++) {
+            this.table[i] = mockList;
+        }
+        this.size = 0;
+    }
 }
 
