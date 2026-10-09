@@ -7,7 +7,7 @@ public class Main {
         set.put("Привет");
         set.put("Мир");
         set.put("Java");
-        set.put("Тест");
+        set.put("1");
 
         System.out.println("size: " + set.size());
         System.out.println("Содержит Java: " + set.contains("Java"));
